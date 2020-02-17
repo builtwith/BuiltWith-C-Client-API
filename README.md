@@ -9,7 +9,7 @@ BuiltWith.BuiltWithClient.Init ( "YOUR_API_KEY" );
 BuiltWith.Objects.v14.DomainAPI domain = BuiltWith.BuiltWithClient.GetDomain ( "example.com" );
 ```
 
-Get your API key by creating a free account at BuiltWith and visiting https://api.builtwityh.com
+Get your API key by creating a free account at BuiltWith and visiting https://api.builtwith.com
 
 ### Installing
 
