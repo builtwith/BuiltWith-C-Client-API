@@ -8,12 +8,16 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Gary Brewer</Authors>
     <Company>BuiltWith Pty Ltd</Company>
-    <Description>Client Rest API for the BuiltWith.com API</Description>
+    <Description>REST Client SDK for the BuiltWith.com API</Description>
     <Copyright>Copyright (c) BuiltWith Pty Ltd</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://api.builtwith.com</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/builtwith/BuiltWith-C-Client-API</PackageProjectUrl>
     <PackageIcon>newLogoSquare.png</PackageIcon>
     <PackageIconUrl />
+    <RepositoryUrl>https://github.com/builtwith/BuiltWith-C-Client-API</RepositoryUrl>
+    <FileVersion>1.0.0.1</FileVersion>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
