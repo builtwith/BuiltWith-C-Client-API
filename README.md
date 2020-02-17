@@ -1,6 +1,6 @@
 # BuiltWith C# Client SDK
 
-Provides a C# client SDK providing functions to access the BuiltWith API.
+Provides a C# client SDK providing functions to access the BuiltWith API. ![.NET Core](https://github.com/builtwith/BuiltWith-C-Client-API/workflows/.NET%20Core/badge.svg?branch=master)
 
 ## Getting Started
 
