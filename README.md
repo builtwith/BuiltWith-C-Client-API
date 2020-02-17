@@ -20,10 +20,18 @@ dotnet add package BuiltWith
 https://www.nuget.org/packages/BuiltWith/
 
 
+## Supported Endpoints
+
+- [x] [Domain API](https://api.builtwith.com/domain-api)
+- [ ] [Free API](https://api.builtwith.com/free-api)
+- [ ] [Lists API](https://api.builtwith.com/lists-api)
+- [ ] [Relationships API](https://api.builtwith.com/relationships-api)
+- [ ] [Keywords API](https://api.builtwith.com/keywords-api)
+- [ ] [Trends API](https://api.builtwith.com/trends-api)
+- [ ] [Company to URL API](https://api.builtwith.com/company-to-url)
 
 ## Licence
 MIT
 
 ## Authors
-
 Gary Brewer
