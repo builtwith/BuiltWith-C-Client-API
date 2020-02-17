@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ApplicationIcon />
+    <Win32Resource />
+    <UserSecretsId>70b08464-4670-4cc2-8c77-da2837b41e1f</UserSecretsId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Gary Brewer</Authors>
+    <Company>BuiltWith Pty Ltd</Company>
+    <Description>Client Rest API for the BuiltWith.com API</Description>
+    <Copyright>Copyright (c) BuiltWith Pty Ltd</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://api.builtwith.com</PackageProjectUrl>
+    <PackageIcon>newLogoSquare.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\psd\newLogoSquare.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
