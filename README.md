@@ -14,7 +14,7 @@ BuiltWith.Objects.v14.DomainAPI domain = BuiltWith.BuiltWithClient.GetDomain ( "
 Download and build or 
 
 ```
-dotnet add package BuiltWith --version 1.0.1
+dotnet add package BuiltWith
 ```
 
 https://www.nuget.org/packages/BuiltWith/
