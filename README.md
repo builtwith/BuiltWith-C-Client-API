@@ -1,6 +1,6 @@
 # BuiltWith C# Client SDK
 
-Provides a C# client SDK providing functions to access the BuiltWith API
+Provides a C# client SDK providing functions to access the BuiltWith API.
 
 ## Getting Started
 
@@ -29,6 +29,12 @@ https://www.nuget.org/packages/BuiltWith/
 - [ ] [Keywords API](https://api.builtwith.com/keywords-api)
 - [ ] [Trends API](https://api.builtwith.com/trends-api)
 - [ ] [Company to URL API](https://api.builtwith.com/company-to-url)
+
+## Dependencies
+
+.NETStandard 2.0
+Newtonsoft.Json (>= 12.0.3)
+
 
 ## Licence
 MIT
