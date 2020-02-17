@@ -32,8 +32,8 @@ https://www.nuget.org/packages/BuiltWith/
 
 ## Dependencies
 
-.NETStandard 2.0
-Newtonsoft.Json (>= 12.0.3)
+* .NETStandard 2.0
+* Newtonsoft.Json (>= 12.0.3)
 
 
 ## Licence
