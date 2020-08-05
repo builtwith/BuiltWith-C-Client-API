@@ -57,7 +57,7 @@ namespace BuiltWith
             List<KeyValuePair<string , string>> @params = new List<KeyValuePair<string , string>> ( );
             @params.Add ( new KeyValuePair<string , string> ( "KEY" , _key ) );
             @params.Add ( new KeyValuePair<string , string> ( "LOOKUP" , string.Join(",",domain) ) );
-            System.Threading.Tasks.Task<Http.Response> task = _getRestClient ( ).HttpClient.MakeRequestAsync ( new Http.Request ( "https://api.builtwith.com/v14/api.json" , @params ) );
+            System.Threading.Tasks.Task<Http.Response> task = _getRestClient ( ).HttpClient.MakeRequestAsync ( new Http.Request ( "https://api.builtwith.com/v15/api.json" , @params ) );
             task.Wait ( );
 
             if ( task.Result != null && task.Result.StatusCode == System.Net.HttpStatusCode.OK )
