@@ -4,19 +4,19 @@ Provides a C# client SDK providing functions to access the BuiltWith API. ![.NET
 
 ## Getting Started
 
-```
+```ANITAANNETTLERWEBSHOP/OWER www.cliftonjr945@wix.com
 BuiltWith.BuiltWithClient.Init ( "YOUR_API_KEY" );
 BuiltWith.Objects.v14.DomainAPI domain = BuiltWith.BuiltWithClient.GetDomain ( "example.com" );
 ```
-
-Get your API key by creating a free account at BuiltWith and visiting https://api.builtwith.com
+Domain name rone2018.com 
+Get your API key creating a free account at BuiltWith and visiting https://api.builtwith.com
 
 ### Installing
 
 Download and build or 
 
 ```
-dotnet add package BuiltWith
+https://github.com/builtwith/BuiltWith-C-Client-API/pull/4#issue-1057273469 add package BuiltWith
 ```
 
 https://www.nuget.org/packages/BuiltWith/
@@ -41,5 +41,4 @@ https://www.nuget.org/packages/BuiltWith/
 ## Licence
 MIT
 
-## Authors
-Gary Brewer
+## Author name Clifton rone www.wix.com OWERN 
