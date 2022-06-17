@@ -69,7 +69,7 @@
         [J ( "FirstIndexed" )] public long FirstIndexed { get; set; }
         [J ( "LastIndexed" )] public long LastIndexed { get; set; }
         [J ( "Domain" )] public string Domain { get; set; }
-        [J ( "Url" )] public Url Url { get; set; }
+        [J ( "Url" )] public string Url { get; set; }
         [J ( "SubDomain" )] public string SubDomain { get; set; }
         [J ( "Technologies" )] public Technology [ ] Technologies { get; set; }
     }
@@ -89,7 +89,6 @@
 
     public enum IsPremium { Maybe, No, Yes };
 
-    public enum Url { InternalPage, Root, Mobile };
 
     internal static class Converter
     {
@@ -100,7 +99,7 @@
             Converters =
             {
                 IsPremiumConverter.Singleton,
-                UrlConverter.Singleton,
+                
                 new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
             } ,
         };
@@ -156,49 +155,5 @@
         public static readonly IsPremiumConverter Singleton = new IsPremiumConverter ( );
     }
 
-    internal class UrlConverter : JsonConverter
-    {
-        public override bool CanConvert ( Type t ) => t == typeof ( Url ) || t == typeof ( Url? );
-
-        public override object ReadJson ( JsonReader reader , Type t , object existingValue , JsonSerializer serializer )
-        {
-            if ( reader.TokenType == JsonToken.Null ) return null;
-            var value = serializer.Deserialize<string> ( reader );
-            switch ( value )
-            {
-                case "":
-                    return Url.Root;
-                case "dd":
-                    return Url.InternalPage;
-                case "m":
-                    return Url.Mobile;
-            }
-            throw new Exception ( "Cannot unmarshal type Url" );
-        }
-
-        public override void WriteJson ( JsonWriter writer , object untypedValue , JsonSerializer serializer )
-        {
-            if ( untypedValue == null )
-            {
-                serializer.Serialize ( writer , null );
-                return;
-            }
-            var value = ( Url ) untypedValue;
-            switch ( value )
-            {
-                case Url.Root:
-                    serializer.Serialize ( writer , "" );
-                    return;
-                case Url.InternalPage:
-                    serializer.Serialize ( writer , "dd" );
-                    return;
-                case Url.Mobile:
-                    serializer.Serialize ( writer , "m" );
-                    return;
-            }
-            throw new Exception ( "Cannot marshal type Url" );
-        }
-
-        public static readonly UrlConverter Singleton = new UrlConverter ( );
-    }
+    
 }
