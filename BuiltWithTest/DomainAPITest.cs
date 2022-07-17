@@ -12,14 +12,17 @@ namespace BuiltWithTest
 
 
         public const string APIKEY = "ENTER YOUR API KEY HERE FOUND AT https://api.builtwith.com";
+
         
 
 
 
 
+
+        // This needs to be run alone it will fail if all tests are run at once.
         [TestMethod]
         [ExpectedException ( typeof ( BuiltWith.Exceptions.BuiltWithException ) )]
-        public void NoAPIKey ( )
+        public void _NoAPIKey ( )
         {
             BuiltWith.BuiltWithClient.GetDomain ( "builtwith.com" );
         }
